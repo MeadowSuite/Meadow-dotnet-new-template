@@ -1,4 +1,4 @@
-# Meadow-dotnet-new-template
+# Meadow.ProjectTemplate
 
 [![Build status](https://ci.appveyor.com/api/projects/status/7k9185t2pt22dkbd/branch/master?svg=true)](https://ci.appveyor.com/project/Meadow/meadow-dotnet-new-template/branch/master)
 
