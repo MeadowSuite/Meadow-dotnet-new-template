@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Meadow.ProjectTemplate</id>
+    <version>0.1.$version$</version>
+    <authors>Hosho</authors>
+    <projectUrl>https://github.com/MeadowSuite</projectUrl>
+    <repository url="https://github.com/MeadowSuite" />
+    <iconUrl>https://github.com/MeadowSuite/Meadow/raw/master/images/meadow-icon-64x64.png?raw=true</iconUrl>
+    <description>
+      Creates a Meadow project template for Solidity development and testing.
+    </description>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+  </metadata>
+</package>

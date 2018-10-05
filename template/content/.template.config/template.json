@@ -1,0 +1,50 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Hosho",
+  "classifications": [
+    "Common",
+    "Console"
+  ],
+  "identity": "Meadow.DotnetTemplate",
+  "name": "Solidity Development and Testing Project",
+  "shortName": "meadow",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "MeadowProject",
+  "preferNameDirectory": true,
+  "primaryOutputs": [
+    {
+      "path": "MeadowProject.csproj"
+    }
+  ],
+  "postActions": [
+    {
+      "description": "Add Meadow package reference.",
+      "actionId": "B17581D1-C5C9-4489-8F0A-004BE667B814",
+      "continueOnError": false,
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet add package Meadow.UnitTestTemplate'"
+        }
+      ],
+      "args": {
+        "referenceType": "package",
+        "reference": "Meadow.UnitTestTemplate",
+        "forceUpdate": "true",
+        "projectFileExtensions": ".csproj"
+      }
+    },
+    {
+      "description": "Restore NuGet packages required by this project.",
+      "manualInstructions": [
+        {
+          "text": "Run 'dotnet restore'"
+        }
+      ],
+      "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+      "continueOnError": true
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+version: 1.0.{build}
+build_script:
+- cmd: nuget pack template/Meadow.ProjectTemplate.nuspec -Properties version=%APPVEYOR_BUILD_NUMBER%
+artifacts:
+- path: '**/Meadow.ProjectTemplate.*.nupkg'
+  name: Meadow.ProjectTemplate.nupkg
+deploy:
+- provider: NuGet
+  api_key:
+    secure: hX+xhksIt71D0ynw1SNVba92geWTDEUiPuurX/AZ5Yy7u/TCI3CocSyxHhUlfi/o
+  artifact: Meadow.ProjectTemplate.nupkg
