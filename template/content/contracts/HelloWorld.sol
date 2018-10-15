@@ -6,7 +6,7 @@ contract HelloWorld {
 
     function renderHelloWorld () public returns (string) {
         emit HelloEvent("Hello world", msg.sender);
-        return 'Hello world';
+        return "Hello world";
     }
 
 }
