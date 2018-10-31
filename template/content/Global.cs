@@ -32,7 +32,7 @@ namespace MeadowProject
         public static async Task Cleanup()
         {
             // Triggers coverage report generation at the end of unit test execution.
-            await Global.Cleanup();
+            await Global.GenerateCoverageReport();
         }
 
     }
